@@ -1,0 +1,1772 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ĐỒ ĐỒNG QUANG TÍN TÂM – Tinh hoa đồ đồng truyền thống</title>
+    <meta name="description" content="Chuyên chế tác, gia công và thi công các sản phẩm đồ đồng mỹ nghệ, tượng đồng, đai đồng và công trình mang đậm giá trị văn hoá – tâm linh.">
+    <meta name="keywords" content="đồ đồng, tượng đồng, đúc tượng đồng, tượng Trần Hưng Đạo, tượng Quang Trung, đai đồng, đồ đồng mỹ nghệ, thi công công trình đồng">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Noto+Serif+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* =====================================================
+           ĐỒ ĐỒNG QUANG TÍN TÂM – CSS HỆ THỐNG HIỆN ĐẠI
+           Phong cách: Truyền thống Việt × Modern Luxury
+           ===================================================== */
+        :root {
+            /* === PALETTE NÂU ĐỒNG CAO CẤP === */
+            --bronze-deep:   #7A4828;   /* Nâu đồng ấm, không tối */
+            --bronze-mid:    #9C5F32;   /* Nâu đồng vừa */
+            --bronze-gold:   #D4A040;   /* Vàng đồng chính */
+            --bronze-light:  #EAB94E;   /* Vàng đồng sáng */
+            --bronze-pale:   #F5CA6A;   /* Vàng nhạt highlight */
+            --bronze-dark:   #472412;   /* Nâu trầm */
+            --bronze-cream:  #F4E2C4;   /* Kem ấm */
+
+            /* === NỀN PHÂN TẦNG (SÁNG, ẤM) === */
+            --bg-hero:    #3E1F0C;   /* Nâu đậm ấm hero */
+            --bg-sec-1:   #4D2910;   /* Section chính */
+            --bg-sec-2:   #5C3215;   /* Section xen kẽ */
+            --bg-card:    #6E3D1E;   /* Card nâu đồng */
+            --bg-card-hover: #834A24; /* Card hover */
+            --bg-glass:   rgba(120, 65, 28, 0.45);  /* Glass tối */
+            --bg-glass-lt: rgba(212, 160, 64, 0.08); /* Glass vàng nhạt */
+
+            /* === CHỮ === */
+            --text-main:    #F4E2C4;
+            --text-muted:   #D8B07A;
+            --text-heading: #EAB94E;
+            --white:        #FFFFFF;
+
+            /* === FONT === */
+            --font-heading: 'Noto Serif Display', serif;
+            --font-body:    'Be Vietnam Pro', sans-serif;
+
+            /* === TRANSITION & SHADOW === */
+            --transition:   all 0.32s cubic-bezier(0.4, 0, 0.2, 1);
+            --shadow-xs:    0 2px 6px rgba(0,0,0,0.2);
+            --shadow-sm:    0 4px 14px rgba(0,0,0,0.28);
+            --shadow-md:    0 10px 30px rgba(0,0,0,0.42);
+            --shadow-lg:    0 20px 50px rgba(0,0,0,0.55);
+            --shadow-gold:  0 8px 32px rgba(212,160,64,0.32);
+            --shadow-glow:  0 0 40px rgba(212,160,64,0.18);
+
+            /* === GRADIENT === */
+            --gradient-bronze:  linear-gradient(135deg, #9C5F32, #D4A040, #EAB94E);
+            --gradient-bronze2: linear-gradient(135deg, #7A4828, #C8913A);
+            --gradient-dark:    linear-gradient(135deg, #472412, #7A4828);
+            --gradient-hero:    linear-gradient(160deg, #4D2910 0%, #3E1F0C 35%, #52280E 65%, #3A1C09 100%);
+            --gradient-gold-text: linear-gradient(135deg, #D4A040 0%, #F5CA6A 45%, #D4A040 100%);
+            --gradient-section-divider: linear-gradient(90deg, transparent, rgba(212,160,64,0.5), transparent);
+
+            /* === HOẠ TIẾT VĂN HOÁ VIỆT (SVG nâng cấp) === */
+
+            /* 1. Trống Đồng Đông Sơn – 7 vòng, tia sáng, lạc điểu */
+            --pattern-drum: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240' viewBox='0 0 240 240'%3E%3Ccircle cx='120' cy='120' r='108' fill='none' stroke='%23D4A040' stroke-width='1.5'/%3E%3Ccircle cx='120' cy='120' r='95' fill='none' stroke='%23D4A040' stroke-width='0.7' stroke-dasharray='5 3'/%3E%3Ccircle cx='120' cy='120' r='80' fill='none' stroke='%23D4A040' stroke-width='1.2'/%3E%3Ccircle cx='120' cy='120' r='65' fill='none' stroke='%23D4A040' stroke-width='0.6' stroke-dasharray='3 3'/%3E%3Ccircle cx='120' cy='120' r='50' fill='none' stroke='%23D4A040' stroke-width='1.2'/%3E%3Ccircle cx='120' cy='120' r='35' fill='none' stroke='%23D4A040' stroke-width='1.8'/%3E%3Ccircle cx='120' cy='120' r='18' fill='none' stroke='%23D4A040' stroke-width='1'/%3E%3Cline x1='120' y1='12' x2='120' y2='228' stroke='%23D4A040' stroke-width='0.4' opacity='0.4'/%3E%3Cline x1='12' y1='120' x2='228' y2='120' stroke='%23D4A040' stroke-width='0.4' opacity='0.4'/%3E%3Cline x1='37' y1='37' x2='203' y2='203' stroke='%23D4A040' stroke-width='0.4' opacity='0.35'/%3E%3Cline x1='203' y1='37' x2='37' y2='203' stroke='%23D4A040' stroke-width='0.4' opacity='0.35'/%3E%3Cpath d='M120 12 L128 30 L148 20 L132 42 L160 45 L138 60 L165 75 L138 82 L162 100 L136 100 L155 122 L130 115 L140 140 L118 128 L120 155 L102 133 L95 158 L92 133 L70 148 L78 123 L52 130 L72 110 L46 108 L72 95 L48 78 L76 80 L62 56 L88 62 L80 36 L104 48 Z' fill='%23D4A040' fill-opacity='0.55'/%3E%3C/svg%3E");
+
+            /* 2. Chim Lạc cánh xoè bay */
+            --pattern-lacbird: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='120' viewBox='0 0 160 120'%3E%3Cpath d='M5 65 Q25 40 55 50 Q75 25 105 42 Q95 56 115 52 Q95 70 72 64 Q55 88 28 74 Q40 62 5 65 Z' fill='none' stroke='%23D4A040' stroke-width='1.6'/%3E%3Ccircle cx='108' cy='40' r='3' fill='%23D4A040'/%3E%3Cpath d='M26 72 Q30 78 35 76 M28 80 Q32 88 37 85 M35 85 Q40 93 45 90' fill='none' stroke='%23D4A040' stroke-width='1.4' stroke-linecap='round'/%3E%3C/svg%3E");
+
+            /* 3. Hồi văn / Chữ Vạn cách điệu */
+            --pattern-cloud: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cpath d='M5 40 L40 40 M40 40 L40 8 M40 8 L15 8 M15 8 L15 25 M15 25 L30 25 M30 25 L30 15 M30 15 L25 15' fill='none' stroke='%23D4A040' stroke-width='1.8' stroke-linecap='square'/%3E%3Cpath d='M45 40 L75 40 M75 40 L75 72 M75 72 L50 72 M50 72 L50 55 M50 55 L65 55 M65 55 L65 65 M65 65 L70 65' fill='none' stroke='%23D4A040' stroke-width='1.8' stroke-linecap='square'/%3E%3C/svg%3E");
+
+            /* 4. Hoa Sen 8 cánh */
+            --pattern-lotus: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Ccircle cx='60' cy='60' r='10' fill='none' stroke='%23D4A040' stroke-width='1.5'/%3E%3Cpath d='M60 50 Q70 35 60 15 Q50 35 60 50Z' fill='none' stroke='%23D4A040' stroke-width='1.3'/%3E%3Cpath d='M60 70 Q70 85 60 105 Q50 85 60 70Z' fill='none' stroke='%23D4A040' stroke-width='1.3'/%3E%3Cpath d='M50 60 Q35 70 15 60 Q35 50 50 60Z' fill='none' stroke='%23D4A040' stroke-width='1.3'/%3E%3Cpath d='M70 60 Q85 70 105 60 Q85 50 70 60Z' fill='none' stroke='%23D4A040' stroke-width='1.3'/%3E%3Cpath d='M53 53 Q42 35 25 25 Q35 42 53 53Z' fill='none' stroke='%23D4A040' stroke-width='1'/%3E%3Cpath d='M67 53 Q78 35 95 25 Q85 42 67 53Z' fill='none' stroke='%23D4A040' stroke-width='1'/%3E%3Cpath d='M53 67 Q42 85 25 95 Q35 78 53 67Z' fill='none' stroke='%23D4A040' stroke-width='1'/%3E%3Cpath d='M67 67 Q78 85 95 95 Q85 78 67 67Z' fill='none' stroke='%23D4A040' stroke-width='1'/%3E%3C/svg%3E");
+
+            /* 5. Rồng cách điệu */
+            --pattern-dragon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cpath d='M10 110 Q20 20 50 60 Q65 80 80 40 Q95 10 110 15' fill='none' stroke='%23D4A040' stroke-width='2' stroke-linecap='round'/%3E%3Ccircle cx='113' cy='14' r='4' fill='none' stroke='%23D4A040' stroke-width='1.5'/%3E%3Cpath d='M22 90 L28 82 M35 65 L41 57 M52 57 L58 50 M68 46 L74 38 M85 28 L91 20' fill='none' stroke='%23D4A040' stroke-width='1.2' stroke-linecap='round'/%3E%3C/svg%3E");
+
+            /* 6. Tam giác Đông Sơn (border) */
+            --pattern-triangle: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cpolygon points='0,40 20,0 40,40' fill='none' stroke='%23D4A040' stroke-width='1.5'/%3E%3Ccircle cx='20' cy='26' r='3' fill='%23D4A040' fill-opacity='0.8'/%3E%3C/svg%3E");
+
+            /* 7. Viền kim cương cổ điển */
+            --pattern-border-classic: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='20' viewBox='0 0 60 20'%3E%3Cpath d='M0 10 L10 0 L20 10 L10 20 Z M20 10 L30 0 L40 10 L30 20 Z M40 10 L50 0 L60 10 L50 20 Z' fill='none' stroke='%23EAB94E' stroke-width='1.2' opacity='0.75'/%3E%3C/svg%3E");
+
+            /* 8. Dải Đông Sơn ngang */
+            --pattern-dongson-strip: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='24' viewBox='0 0 80 24'%3E%3Crect x='1' y='1' width='22' height='22' rx='2' fill='none' stroke='%23EAB94E' stroke-width='1'/%3E%3Cpath d='M5 12 L19 12 M12 5 L12 19' fill='none' stroke='%23EAB94E' stroke-width='0.8'/%3E%3Crect x='29' y='1' width='22' height='22' rx='2' fill='none' stroke='%23EAB94E' stroke-width='1'/%3E%3Ccircle cx='40' cy='12' r='5' fill='none' stroke='%23EAB94E' stroke-width='0.8'/%3E%3Crect x='57' y='1' width='22' height='22' rx='2' fill='none' stroke='%23EAB94E' stroke-width='1'/%3E%3Cpath d='M61 6 L75 6 L75 18 L61 18 Z' fill='none' stroke='%23EAB94E' stroke-width='0.7'/%3E%3C/svg%3E");
+        }
+
+        /* ===========================
+           RESET & BASE
+           =========================== */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: var(--font-body);
+            color: var(--text-main);
+            background-color: var(--bg-sec-1);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-heading);
+            color: var(--text-heading);
+            margin-bottom: 1rem;
+            font-weight: 600;
+            line-height: 1.25;
+        }
+        a { text-decoration: none; color: inherit; transition: var(--transition); }
+        ul { list-style: none; }
+        img { max-width: 100%; height: auto; display: block; border-radius: 8px; }
+
+        /* Global micro-pattern layer */
+        .global-pattern {
+            position: fixed; inset: 0;
+            background-image: var(--pattern-lacbird);
+            background-size: 300px;
+            opacity: 0.018;
+            pointer-events: none;
+            z-index: 0;
+            mix-blend-mode: screen;
+        }
+
+        /* Bronze image filter */
+        .img-bronze-filter {
+            filter: sepia(0.35) hue-rotate(-10deg) saturate(1.1) contrast(1.04) brightness(0.92);
+            transition: filter 0.4s ease;
+        }
+        .img-bronze-filter:hover {
+            filter: sepia(0.15) hue-rotate(-5deg) saturate(1.05) contrast(1.02) brightness(1.04);
+        }
+
+        .container {
+            width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 24px;
+            position: relative; z-index: 2;
+        }
+
+        /* ===========================
+           SECTION BASE
+           =========================== */
+        .section-padding { padding: 100px 0; position: relative; overflow: hidden; }
+
+        /* Viền hoa văn trên section */
+        .section-border-top {
+            position: absolute; top: 0; left: 0; right: 0; height: 20px;
+            background-image: var(--pattern-border-classic); background-size: 60px;
+            opacity: 0.28;
+        }
+
+        /* Đường kẻ chia section sang */
+        .section-divider {
+            width: 100%; height: 1px;
+            background: var(--gradient-section-divider);
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.8rem;
+            margin-bottom: 0.75rem;
+            position: relative;
+            padding-bottom: 18px;
+            color: var(--bronze-light);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            /* Gradient text hiện đại */
+            background: var(--gradient-gold-text);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            filter: drop-shadow(0 2px 8px rgba(212,160,64,0.3));
+        }
+        .section-title::after {
+            content: '';
+            position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
+            width: 80px; height: 3px;
+            background: var(--gradient-bronze);
+            border-radius: 2px;
+            box-shadow: 0 0 12px rgba(212,160,64,0.5);
+        }
+        /* Điểm nhấn hai bên gạch chân */
+        .section-title::before {
+            content: '';
+            position: absolute; bottom: -4px; left: 50%; transform: translateX(-50%);
+            width: 160px; height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(212,160,64,0.3), transparent);
+        }
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            margin-bottom: 55px;
+            font-size: 1.05rem;
+            font-style: italic;
+            position: relative; z-index: 2;
+            opacity: 0.85;
+        }
+
+        /* ===========================
+           BUTTONS – HIỆN ĐẠI
+           =========================== */
+        .btn {
+            display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+            padding: 15px 36px;
+            border-radius: 6px;
+            font-family: var(--font-body);
+            font-weight: 700;
+            cursor: pointer;
+            border: none;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            transition: var(--transition);
+            font-size: 0.92rem;
+            position: relative;
+            z-index: 2;
+            white-space: nowrap;
+        }
+        .btn-primary {
+            background: var(--gradient-bronze);
+            color: #2A1308;
+            box-shadow: var(--shadow-sm), 0 0 0 0 rgba(212,160,64,0);
+            border: 1px solid rgba(245,202,106,0.4);
+        }
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-gold), 0 0 20px rgba(212,160,64,0.2);
+            color: #1A0D04;
+            filter: brightness(1.1);
+        }
+        .btn-primary:active { transform: translateY(-1px); }
+
+        .btn-outline {
+            background: rgba(78, 38, 12, 0.6);
+            color: var(--bronze-cream);
+            border: 1.5px solid var(--bronze-gold);
+            backdrop-filter: blur(8px);
+        }
+        .btn-outline:hover {
+            background: var(--bronze-mid);
+            color: var(--bronze-cream);
+            border-color: var(--bronze-light);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212,160,64,0.22);
+        }
+        .btn-outline:active { transform: translateY(0); }
+
+        /* ===========================
+           HEADER – GLASS PREMIUM
+           =========================== */
+        header {
+            position: fixed; top: 0; left: 0; width: 100%;
+            background: rgba(62, 31, 12, 0.82);
+            backdrop-filter: blur(20px) saturate(1.4);
+            -webkit-backdrop-filter: blur(20px) saturate(1.4);
+            box-shadow: 0 4px 24px rgba(0,0,0,0.45), 0 1px 0 rgba(212,160,64,0.15);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(212,160,64,0.22);
+            transition: var(--transition);
+        }
+        header.scrolled {
+            background: rgba(46, 22, 7, 0.97);
+            border-bottom-color: rgba(212,160,64,0.45);
+            box-shadow: 0 6px 30px rgba(0,0,0,0.6);
+        }
+        .header-container {
+            display: flex; justify-content: space-between; align-items: center; height: 82px;
+        }
+        .logo {
+            font-family: var(--font-heading);
+            font-size: 1.65rem;
+            font-weight: 700;
+            color: var(--bronze-light);
+            display: flex; align-items: center; gap: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+        .logo i {
+            color: var(--bronze-gold);
+            font-size: 2rem;
+            filter: drop-shadow(0 0 6px rgba(212,160,64,0.5));
+        }
+        .nav-menu { display: flex; gap: 32px; align-items: center; }
+        .nav-link {
+            font-weight: 500;
+            color: rgba(244,226,196,0.85);
+            position: relative;
+            padding: 6px 0;
+            text-transform: uppercase;
+            font-size: 0.88rem;
+            letter-spacing: 1.2px;
+            transition: var(--transition);
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute; bottom: -2px; left: 0; width: 0; height: 2px;
+            background: var(--gradient-bronze);
+            transition: width 0.3s ease;
+            border-radius: 1px;
+        }
+        .nav-link:hover { color: var(--bronze-light); }
+        .nav-link:hover::after { width: 100%; }
+        .nav-link.active { color: var(--bronze-light); }
+        .nav-link.active::after { width: 100%; }
+
+        /* Dropdown */
+        .dropdown { position: relative; }
+        .dropdown-menu {
+            position: absolute; top: calc(100% + 12px); left: 0;
+            background: rgba(62, 30, 10, 0.97);
+            backdrop-filter: blur(16px);
+            min-width: 240px;
+            box-shadow: var(--shadow-md), 0 0 0 1px rgba(212,160,64,0.18);
+            border-radius: 8px;
+            opacity: 0; visibility: hidden;
+            transform: translateY(10px);
+            transition: var(--transition);
+            border: 1px solid rgba(212,160,64,0.22);
+            border-top: 2px solid var(--bronze-gold);
+            z-index: 10;
+            overflow: hidden;
+        }
+        .dropdown:hover .dropdown-menu {
+            opacity: 1; visibility: visible; transform: translateY(0);
+        }
+        .dropdown-item {
+            display: block; padding: 13px 20px;
+            color: var(--text-main);
+            border-bottom: 1px solid rgba(255,255,255,0.04);
+            transition: var(--transition);
+            font-size: 0.93rem;
+        }
+        .dropdown-item:hover {
+            background: rgba(212,160,64,0.12);
+            color: var(--bronze-light);
+            padding-left: 26px;
+        }
+        .hamburger { display: none; cursor: pointer; font-size: 1.7rem; color: var(--bronze-light); }
+
+        /* ===========================
+           HERO SECTION – HIỆN ĐẠI
+           =========================== */
+        .hero {
+            padding-top: 82px;
+            background: var(--gradient-hero);
+            position: relative;
+            overflow: hidden;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Lớp Chim Lạc phủ đều */
+        .hero::before {
+            content: '';
+            position: absolute; inset: 0;
+            background-image: var(--pattern-lacbird);
+            background-size: 200px;
+            opacity: 0.07;
+            mix-blend-mode: screen;
+            z-index: 0;
+        }
+
+        /* Hồi văn đáy hero */
+        .hero::after {
+            content: '';
+            position: absolute; bottom: 0; left: 0; right: 0; height: 200px;
+            background-image: var(--pattern-cloud);
+            background-size: 80px;
+            opacity: 0.09;
+            z-index: 1; pointer-events: none;
+            mask-image: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+            -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+        }
+
+        /* Trống đồng lớn góc phải */
+        .hero-pattern-drum {
+            position: absolute; top: -80px; right: -140px;
+            width: 780px; height: 780px;
+            background-image: var(--pattern-drum);
+            background-size: contain; background-repeat: no-repeat;
+            opacity: 0.11; z-index: 1;
+            animation: rotateSlow 130s linear infinite;
+            mix-blend-mode: screen;
+        }
+
+        /* Trống đồng nhỏ góc trái dưới */
+        .hero-pattern-drum-sm {
+            position: absolute; bottom: -110px; left: -90px;
+            width: 400px; height: 400px;
+            background-image: var(--pattern-drum);
+            background-size: contain; background-repeat: no-repeat;
+            opacity: 0.07; z-index: 1;
+            animation: rotateSlow 220s linear infinite reverse;
+            mix-blend-mode: screen;
+        }
+
+        /* Ánh vàng radial trung tâm */
+        .hero-glow {
+            position: absolute;
+            top: 15%; left: 50%; transform: translateX(-50%);
+            width: 1100px; height: 600px;
+            background: radial-gradient(ellipse at center,
+                rgba(212,160,64,0.1) 0%,
+                rgba(156,95,50,0.06) 40%,
+                transparent 72%);
+            z-index: 1; pointer-events: none;
+        }
+
+        /* Hoa sen phủ nền */
+        .hero-pattern-lotus {
+            position: absolute; inset: 0;
+            background-image: var(--pattern-lotus);
+            background-size: 280px;
+            opacity: 0.04;
+            z-index: 1; pointer-events: none;
+            mix-blend-mode: screen;
+        }
+
+        /* Viền hoa văn trên đỉnh */
+        .hero-top-border {
+            position: absolute; top: 82px; left: 0; right: 0; height: 20px;
+            background-image: var(--pattern-border-classic);
+            background-size: 60px;
+            opacity: 0.22; z-index: 2; pointer-events: none;
+        }
+
+        /* Viền hoa văn đáy */
+        .hero-bottom-border {
+            position: absolute; bottom: 0; left: 0; right: 0; height: 20px;
+            background-image: var(--pattern-border-classic);
+            background-size: 60px;
+            opacity: 0.18; z-index: 2; pointer-events: none;
+        }
+
+        @keyframes rotateSlow { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+        @keyframes floatUp { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+        @keyframes shimmer {
+            0%   { background-position: -200% center; }
+            100% { background-position: 200% center; }
+        }
+
+        /* HERO CONTAINER */
+        .hero-container {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 60px;
+            align-items: center;
+            position: relative; z-index: 2;
+            padding: 60px 0;
+        }
+
+        /* HERO TEXT */
+        .hero-content h1 {
+            font-size: 3.6rem;
+            line-height: 1.18;
+            margin-bottom: 18px;
+            font-weight: 700;
+            /* Gradient text vàng đồng */
+            background: linear-gradient(135deg, #F5CA6A 0%, #D4A040 40%, #EAB94E 70%, #F5CA6A 100%);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            filter: drop-shadow(0 3px 12px rgba(212,160,64,0.4));
+            animation: shimmer 5s linear infinite;
+        }
+        .hero-content h2 {
+            font-family: var(--font-body);
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            font-weight: 400;
+            margin-bottom: 22px;
+            letter-spacing: 0.5px;
+            line-height: 1.6;
+        }
+        .hero-content p {
+            font-size: 1.05rem;
+            margin-bottom: 32px;
+            color: var(--text-muted);
+            line-height: 1.9;
+            opacity: 0.9;
+        }
+
+        /* === 3 CHỈ SỐ – GLASS CARD === */
+        .hero-highlights {
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px;
+            margin-bottom: 36px;
+        }
+        .hero-highlight-item {
+            background: linear-gradient(135deg, rgba(120,65,28,0.55), rgba(90,45,15,0.45));
+            border: 1px solid rgba(212,160,64,0.35);
+            border-radius: 10px;
+            padding: 18px 14px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.3), inset 0 1px 0 rgba(245,202,106,0.15);
+        }
+        /* Top glow bar */
+        .hero-highlight-item::before {
+            content: '';
+            position: absolute; top: 0; left: 0; right: 0; height: 2px;
+            background: var(--gradient-bronze);
+            opacity: 0.85;
+        }
+        /* Tinh tế: shimmer phản sáng */
+        .hero-highlight-item::after {
+            content: '';
+            position: absolute; top: 0; left: -100%; width: 60%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.04), transparent);
+            transition: left 0.5s ease;
+        }
+        .hero-highlight-item:hover::after { left: 140%; }
+        .hero-highlight-item:hover {
+            background: linear-gradient(135deg, rgba(140,84,48,0.7), rgba(110,60,22,0.6));
+            border-color: rgba(234,185,78,0.6);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(212,160,64,0.22), inset 0 1px 0 rgba(245,202,106,0.2);
+        }
+        .hero-highlight-item .hl-number {
+            display: block;
+            font-family: var(--font-heading);
+            font-size: 1.65rem;
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 7px;
+            background: var(--gradient-gold-text);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            filter: drop-shadow(0 1px 4px rgba(212,160,64,0.4));
+        }
+        .hero-highlight-item .hl-label {
+            display: block;
+            font-size: 0.78rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            line-height: 1.35;
+        }
+
+        /* DIVIDER TRANG TRÍ */
+        .hero-divider {
+            display: flex; align-items: center; gap: 14px; margin-bottom: 30px;
+        }
+        .hero-divider::before, .hero-divider::after {
+            content: ''; flex: 1; height: 1px;
+            background: linear-gradient(to right, transparent, rgba(212,160,64,0.5), transparent);
+        }
+        .hero-divider span {
+            color: var(--bronze-gold); font-size: 1rem;
+            filter: drop-shadow(0 0 4px rgba(212,160,64,0.5));
+        }
+
+        .hero-btns { display: flex; gap: 18px; flex-wrap: wrap; }
+
+        /* === ẢNH HERO – PREMIUM CARD === */
+        .hero-image { position: relative; }
+        .hero-image-wrapper {
+            position: relative;
+            border-radius: 16px;
+            overflow: visible;
+            /* Multi-layer shadow sang */
+            box-shadow:
+                0 30px 70px rgba(0,0,0,0.7),
+                0 0 60px rgba(212,160,64,0.15),
+                0 0 0 1px rgba(212,160,64,0.1);
+            animation: floatUp 6s ease-in-out infinite;
+        }
+        .hero-img-inner {
+            border-radius: 14px;
+            overflow: hidden;
+            border: 1px solid rgba(212,160,64,0.5);
+            position: relative;
+        }
+        /* Overlay gradient ảnh */
+        .hero-img-inner::after {
+            content: '';
+            position: absolute; inset: 0;
+            background:
+                linear-gradient(to top, rgba(62,31,12,0.65) 0%, rgba(62,31,12,0.15) 40%, transparent 100%),
+                linear-gradient(to right, rgba(62,31,12,0.1) 0%, transparent 30%);
+            pointer-events: none;
+            z-index: 1;
+        }
+        /* Ánh vàng radial trên ảnh */
+        .hero-img-inner::before {
+            content: '';
+            position: absolute; inset: 0;
+            background: radial-gradient(ellipse at 65% 25%, rgba(212,160,64,0.1) 0%, transparent 65%);
+            pointer-events: none; z-index: 2;
+        }
+        .hero-image-wrapper img {
+            width: 100%; height: 580px;
+            object-fit: cover; display: block; border-radius: 0;
+        }
+
+        /* Góc trang trí vàng đồng */
+        .hero-img-corner {
+            position: absolute; width: 40px; height: 40px; z-index: 3; pointer-events: none;
+        }
+        .hero-img-corner.tl { top: -10px; left: -10px; border-top: 2px solid var(--bronze-gold); border-left: 2px solid var(--bronze-gold); border-radius: 5px 0 0 0; }
+        .hero-img-corner.tr { top: -10px; right: -10px; border-top: 2px solid var(--bronze-gold); border-right: 2px solid var(--bronze-gold); border-radius: 0 5px 0 0; }
+        .hero-img-corner.bl { bottom: -10px; left: -10px; border-bottom: 2px solid var(--bronze-gold); border-left: 2px solid var(--bronze-gold); border-radius: 0 0 0 5px; }
+        .hero-img-corner.br { bottom: -10px; right: -10px; border-bottom: 2px solid var(--bronze-gold); border-right: 2px solid var(--bronze-gold); border-radius: 0 0 5px 0; }
+
+        /* Badge nhãn nổi */
+        .hero-img-badge {
+            position: absolute; bottom: 22px; left: 22px; z-index: 4;
+            background: rgba(46,22,7,0.88);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(212,160,64,0.4);
+            border-left: 3px solid var(--bronze-gold);
+            padding: 11px 18px;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.45);
+        }
+        .hero-img-badge span { display: block; color: var(--text-muted); font-size: 0.8rem; margin-bottom: 3px; }
+        .hero-img-badge strong { color: var(--bronze-light); font-size: 0.92rem; font-weight: 600; }
+
+        /* ===========================
+           ABOUT SECTION
+           =========================== */
+        .about {
+            background-color: var(--bg-sec-2);
+            position: relative;
+        }
+        .about::before {
+            content: '';
+            position: absolute; inset: 0;
+            background-image: var(--pattern-cloud); background-size: 160px;
+            opacity: 0.045; pointer-events: none; z-index: 1;
+        }
+        /* Ánh sáng radial phía phải */
+        .about::after {
+            content: '';
+            position: absolute; top: 0; right: 0; width: 50%; height: 100%;
+            background: radial-gradient(ellipse at right center, rgba(212,160,64,0.05) 0%, transparent 65%);
+            pointer-events: none; z-index: 1;
+        }
+        .about-grid {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 70px;
+            align-items: center; position: relative; z-index: 2;
+        }
+        .about-img-wrapper { position: relative; }
+        .about-img-wrapper img {
+            width: 100%; height: 500px; object-fit: cover;
+            border-radius: 14px;
+            border: 2px solid rgba(156,95,50,0.5);
+            box-shadow: var(--shadow-md), 0 0 30px rgba(0,0,0,0.3);
+        }
+        .about-stats {
+            position: absolute; bottom: -35px; right: -35px;
+            background: linear-gradient(135deg, var(--bg-card), rgba(90,45,18,0.97));
+            padding: 26px;
+            border-radius: 12px;
+            box-shadow: var(--shadow-lg);
+            display: grid; grid-template-columns: 1fr 1fr; gap: 22px;
+            border: 1px solid rgba(212,160,64,0.28);
+            border-left: 4px solid var(--bronze-gold);
+            backdrop-filter: blur(8px);
+        }
+        .stat-item h4 {
+            color: var(--bronze-light); font-size: 2rem; margin-bottom: 5px;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+            background: var(--gradient-gold-text);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+        }
+        .stat-item p { font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; }
+
+        .about-content h2 { font-size: 2.5rem; text-align: left; margin-bottom: 22px; }
+        .about-content p { margin-bottom: 18px; color: var(--text-main); font-size: 1.02rem; line-height: 1.85; }
+        .about-features { margin-top: 30px; }
+        .about-features li {
+            margin-bottom: 16px; display: flex; align-items: flex-start; gap: 14px;
+            font-weight: 500; font-size: 0.98rem; line-height: 1.6;
+        }
+        .about-features i { color: var(--bronze-gold); font-size: 1.3rem; margin-top: 2px; flex-shrink: 0; }
+
+        /* ===========================
+           PRODUCTS SECTION
+           =========================== */
+        .products { background-color: var(--bg-sec-1); position: relative; }
+        .products::before {
+            content: ''; position: absolute; inset: 0;
+            background-image: var(--pattern-drum); background-size: 220px;
+            opacity: 0.04; pointer-events: none; z-index: 1; mix-blend-mode: screen;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+            gap: 30px;
+            position: relative; z-index: 2;
+        }
+        .product-card {
+            background: linear-gradient(165deg, var(--bg-card), rgba(100,55,24,0.95));
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            border: 1px solid rgba(212,160,64,0.12);
+            cursor: pointer;
+            position: relative;
+        }
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-gold), var(--shadow-md);
+            border-color: rgba(212,160,64,0.5);
+        }
+        .product-img-wrap {
+            position: relative; height: 250px; overflow: hidden;
+            border-bottom: 2px solid rgba(212,160,64,0.35);
+        }
+        .product-img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.55s ease; }
+        .product-card:hover .product-img-wrap img { transform: scale(1.07); }
+        /* Overlay gradient ảnh card */
+        .product-img-wrap::after {
+            content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 60%;
+            background: linear-gradient(to top, rgba(62,31,12,0.5) 0%, transparent 100%);
+            pointer-events: none;
+        }
+        .product-info { padding: 22px 20px; }
+        .product-info h3 { font-size: 1.18rem; margin-bottom: 12px; color: var(--bronze-light); }
+        .product-meta { font-size: 0.88rem; color: var(--text-muted); margin-bottom: 18px; }
+        .product-meta p { margin-bottom: 6px; display: flex; gap: 8px; align-items: center; }
+        .product-meta i { color: var(--bronze-mid); width: 14px; }
+        .read-more {
+            color: var(--bronze-gold); font-weight: 600; font-size: 0.9rem;
+            text-transform: uppercase; letter-spacing: 1px;
+            display: inline-flex; align-items: center; gap: 8px;
+            transition: gap 0.2s ease;
+        }
+        .product-card:hover .read-more { color: var(--bronze-pale); gap: 12px; }
+
+        /* ===========================
+           SERVICES SECTION
+           =========================== */
+        .services { background-color: var(--bg-hero); position: relative; }
+        .services::before {
+            content: ''; position: absolute; inset: 0;
+            background-image: var(--pattern-dragon); background-size: 280px;
+            opacity: 0.05; pointer-events: none; z-index: 1; mix-blend-mode: screen;
+        }
+        /* Ánh sáng nền dịch vụ */
+        .services::after {
+            content: '';
+            position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
+            width: 80%; height: 50%;
+            background: radial-gradient(ellipse at center bottom, rgba(212,160,64,0.06) 0%, transparent 70%);
+            pointer-events: none; z-index: 1;
+        }
+        .service-grid {
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: 36px;
+            position: relative; z-index: 2;
+        }
+        .service-card {
+            background: linear-gradient(165deg, var(--bg-card) 0%, rgba(85,45,18,0.97) 100%);
+            padding: 0; border-radius: 14px; text-align: center;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            position: relative; overflow: hidden;
+            border: 1px solid rgba(212,160,64,0.15);
+            display: flex; flex-direction: column;
+        }
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-gold), var(--shadow-md);
+            border-color: rgba(212,160,64,0.5);
+        }
+        .service-img { height: 210px; position: relative; overflow: hidden; }
+        .service-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+        .service-card:hover .service-img img { transform: scale(1.05); }
+        .service-img::after {
+            content: ''; position: absolute; inset: 0;
+            background: linear-gradient(to top, var(--bg-card) 0%, rgba(110,62,28,0.45) 50%, transparent 100%);
+        }
+        .service-content { padding: 30px 28px; flex-grow: 1; display: flex; flex-direction: column; }
+        .service-icon {
+            width: 74px; height: 74px;
+            background: linear-gradient(135deg, var(--bg-sec-1), var(--bg-card));
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            margin: -60px auto 22px;
+            font-size: 1.85rem; color: var(--bronze-light);
+            border: 2px solid rgba(212,160,64,0.6);
+            position: relative; z-index: 2;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.45), 0 0 20px rgba(212,160,64,0.15);
+            transition: var(--transition);
+        }
+        .service-card:hover .service-icon {
+            border-color: var(--bronze-gold);
+            box-shadow: 0 6px 20px rgba(212,160,64,0.3);
+        }
+        .service-content h3 { font-size: 1.5rem; margin-bottom: 14px; color: var(--bronze-light); }
+        .service-content p { color: var(--text-muted); margin-bottom: 22px; font-size: 0.93rem; line-height: 1.7; }
+        .service-pros { text-align: left; margin-bottom: 28px; flex-grow: 1; }
+        .service-pros li {
+            margin-bottom: 11px; font-size: 0.92rem;
+            display: flex; gap: 10px; align-items: flex-start;
+        }
+        .service-pros i { color: var(--bronze-gold); margin-top: 4px; font-size: 0.85rem; }
+        .service-card .btn { width: 100%; }
+
+        /* ===========================
+           PROJECTS SECTION
+           =========================== */
+        .projects { background-color: var(--bg-sec-2); position: relative; }
+        .projects-pattern-drum {
+            position: absolute; top: 8%; left: -160px;
+            width: 480px; height: 480px;
+            background-image: var(--pattern-drum); background-size: contain; background-repeat: no-repeat;
+            opacity: 0.055; z-index: 1;
+        }
+        .projects::after {
+            content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 28px;
+            background-image: var(--pattern-triangle); background-size: 40px; opacity: 0.08; z-index: 1;
+        }
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 28px;
+            position: relative; z-index: 2;
+        }
+        .project-card {
+            position: relative; border-radius: 14px; overflow: hidden; cursor: pointer;
+            box-shadow: var(--shadow-md);
+            border: 1px solid rgba(212,160,64,0.08);
+            height: 300px;
+            transition: var(--transition);
+        }
+        .project-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+        .project-card:hover img { transform: scale(1.07); }
+        .project-card:hover { border-color: rgba(212,160,64,0.45); box-shadow: var(--shadow-gold); }
+        .project-overlay {
+            position: absolute; inset: 0;
+            background: linear-gradient(to top, rgba(62,31,12,0.94) 0%, rgba(62,31,12,0.35) 55%, transparent 100%);
+            display: flex; flex-direction: column; justify-content: flex-end;
+            padding: 28px;
+            transition: var(--transition);
+            border-bottom: 3px solid var(--bronze-gold);
+        }
+        .project-card:hover .project-overlay {
+            background: linear-gradient(to top, rgba(62,31,12,0.97) 0%, rgba(62,31,12,0.5) 60%, transparent 100%);
+        }
+        .project-overlay h3 {
+            color: var(--bronze-light); font-size: 1.3rem; margin-bottom: 8px;
+            text-shadow: 0 2px 6px rgba(0,0,0,0.8);
+        }
+        .project-overlay p {
+            color: var(--text-main); font-size: 0.9rem; margin-bottom: 0;
+            display: flex; gap: 8px; align-items: center; opacity: 0.9;
+        }
+        .project-overlay i { color: var(--bronze-gold); }
+
+        /* ===========================
+           NEWS SECTION
+           =========================== */
+        .news { background-color: var(--bg-sec-1); position: relative; }
+        .news::before {
+            content: ''; position: absolute; inset: 0;
+            background-image: var(--pattern-lotus); background-size: 220px;
+            opacity: 0.038; pointer-events: none; z-index: 1;
+        }
+        .news-grid {
+            display: grid; grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+            gap: 28px; position: relative; z-index: 2;
+        }
+        .news-card {
+            background: linear-gradient(165deg, var(--bg-card), rgba(95,50,20,0.97));
+            border-radius: 12px; overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(212,160,64,0.1);
+            transition: var(--transition);
+        }
+        .news-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-md), var(--shadow-gold);
+            border-color: rgba(212,160,64,0.45);
+        }
+        .news-img-wrap { height: 210px; overflow: hidden; position: relative; }
+        .news-img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+        .news-card:hover .news-img-wrap img { transform: scale(1.05); }
+        .news-img-wrap::after {
+            content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 40%;
+            background: linear-gradient(to top, rgba(62,31,12,0.4), transparent);
+            pointer-events: none;
+        }
+        .news-content { padding: 24px; }
+        .news-date {
+            font-size: 0.82rem; color: var(--bronze-gold); margin-bottom: 11px;
+            display: flex; gap: 7px; align-items: center; font-weight: 500;
+            text-transform: uppercase; letter-spacing: 0.5px;
+        }
+        .news-content h3 { font-size: 1.15rem; line-height: 1.5; margin-bottom: 12px; color: var(--bronze-light); }
+        .news-content p {
+            font-size: 0.92rem; color: var(--text-muted); margin-bottom: 18px;
+            display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+            line-height: 1.65;
+        }
+
+        /* ===========================
+           CONTACT SECTION
+           =========================== */
+        .contact { background-color: var(--bg-sec-2); position: relative; }
+        .contact::before {
+            content: ''; position: absolute; inset: 0;
+            background-image: var(--pattern-triangle); background-size: 110px;
+            opacity: 0.028; pointer-events: none; z-index: 1;
+        }
+        .contact-container {
+            background: linear-gradient(135deg, rgba(90,45,15,0.6), rgba(70,35,12,0.8));
+            border-radius: 16px;
+            box-shadow: var(--shadow-lg);
+            overflow: hidden;
+            display: grid; grid-template-columns: 1fr 1.5fr;
+            border: 1px solid rgba(212,160,64,0.22);
+            position: relative; z-index: 2;
+            backdrop-filter: blur(4px);
+        }
+        .contact-info {
+            background: var(--gradient-dark);
+            padding: 50px 40px;
+            position: relative;
+            border-right: 1px solid rgba(212,160,64,0.18);
+        }
+        .contact-info::before {
+            content: ''; position: absolute; inset: 0;
+            background-image: var(--pattern-drum); background-size: 250px;
+            opacity: 0.07; pointer-events: none;
+        }
+        .contact-info::after {
+            content: ''; position: absolute; top: 0; right: 0; width: 2px; height: 100%;
+            background: linear-gradient(to bottom, transparent, rgba(212,160,64,0.4), transparent);
+        }
+        .contact-info h3 { color: var(--bronze-light); font-size: 2rem; margin-bottom: 18px; position: relative; z-index: 2; }
+        .contact-info p { color: var(--text-muted); margin-bottom: 36px; font-size: 1rem; position: relative; z-index: 2; line-height: 1.75; }
+        .contact-list { position: relative; z-index: 2; }
+        .contact-list li { display: flex; gap: 14px; margin-bottom: 24px; align-items: flex-start; }
+        .contact-list i { color: var(--bronze-gold); font-size: 1.3rem; margin-top: 4px; }
+        .contact-list strong { color: var(--bronze-cream); font-size: 1rem; display: block; margin-bottom: 4px; }
+
+        .contact-form-wrapper {
+            padding: 50px 42px;
+            background: rgba(78,38,12,0.35);
+            position: relative; z-index: 2;
+        }
+        .contact-form-wrapper h3 { color: var(--bronze-light); margin-bottom: 28px; font-size: 1.75rem; }
+        .form-group { margin-bottom: 18px; }
+        .form-group label { display: block; margin-bottom: 8px; font-weight: 500; color: var(--bronze-cream); font-size: 0.93rem; }
+        .form-control {
+            width: 100%; padding: 13px 16px;
+            border: 1px solid rgba(212,160,64,0.28);
+            border-radius: 7px;
+            font-family: inherit; font-size: 0.97rem;
+            transition: var(--transition);
+            background: rgba(46,22,7,0.55);
+            color: var(--text-main);
+            backdrop-filter: blur(4px);
+        }
+        .form-control::placeholder { color: rgba(212,176,138,0.38); }
+        .form-control:focus {
+            outline: none;
+            border-color: var(--bronze-gold);
+            background: rgba(46,22,7,0.8);
+            box-shadow: 0 0 0 3px rgba(212,160,64,0.15);
+        }
+        textarea.form-control { resize: vertical; min-height: 120px; }
+        .contact-actions {
+            display: flex; justify-content: space-between; align-items: center; margin-top: 28px;
+        }
+
+        /* ===========================
+           FOOTER
+           =========================== */
+        footer {
+            background: linear-gradient(180deg, var(--bg-hero) 0%, #2A1206 100%);
+            color: var(--text-muted);
+            padding: 80px 0 30px;
+            position: relative;
+            border-top: 2px solid rgba(212,160,64,0.3);
+            overflow: hidden;
+        }
+        footer::before {
+            content: ''; position: absolute; bottom: -50px; left: -50px;
+            width: 380px; height: 380px;
+            background-image: var(--pattern-cloud); background-size: cover;
+            opacity: 0.04; pointer-events: none; z-index: 0;
+        }
+        footer::after {
+            content: ''; position: absolute; top: 0; left: 0; right: 0; height: 10px;
+            background-image: var(--pattern-border-classic); background-size: 40px;
+            opacity: 0.22; z-index: 1;
+        }
+        .footer-grid {
+            display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 48px;
+            margin-bottom: 48px; position: relative; z-index: 2;
+        }
+        .footer-col h4 {
+            color: var(--bronze-light); font-size: 1.2rem; margin-bottom: 22px;
+            position: relative; padding-bottom: 12px; text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .footer-col h4::after {
+            content: ''; position: absolute; bottom: 0; left: 0;
+            width: 45px; height: 2px;
+            background: var(--gradient-bronze);
+            border-radius: 1px;
+        }
+        .footer-logo {
+            font-family: var(--font-heading); font-size: 1.9rem;
+            color: var(--bronze-light); margin-bottom: 18px;
+            display: block; text-transform: uppercase;
+            filter: drop-shadow(0 2px 6px rgba(0,0,0,0.5));
+        }
+        .footer-links li { margin-bottom: 11px; }
+        .footer-links a {
+            color: var(--text-muted); font-size: 0.93rem;
+            transition: var(--transition);
+            display: inline-block;
+        }
+        .footer-links a:hover { color: var(--bronze-gold); padding-left: 8px; }
+        .social-icons { display: flex; gap: 12px; margin-top: 22px; }
+        .social-icons a {
+            width: 44px; height: 44px;
+            background: rgba(212,160,64,0.1);
+            display: flex; align-items: center; justify-content: center;
+            border-radius: 50%;
+            color: var(--bronze-light);
+            border: 1px solid rgba(212,160,64,0.28);
+            font-size: 1.1rem;
+            transition: var(--transition);
+        }
+        .social-icons a:hover {
+            background: var(--gradient-bronze);
+            color: #2A1308;
+            border-color: var(--bronze-light);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 16px rgba(212,160,64,0.28);
+        }
+        .footer-bottom {
+            text-align: center; padding-top: 24px;
+            border-top: 1px solid rgba(212,160,64,0.15);
+            font-size: 0.9rem; position: relative; z-index: 2;
+            color: rgba(212,176,138,0.55);
+        }
+
+        /* ===========================
+           FLOATING & CHAT
+           =========================== */
+        .floating-buttons {
+            position: fixed; bottom: 28px; right: 28px;
+            display: flex; flex-direction: column; gap: 14px; z-index: 999;
+        }
+        .float-btn {
+            width: 54px; height: 54px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            color: #fff; font-size: 1.45rem;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.5);
+            cursor: pointer;
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            border: 2px solid transparent;
+        }
+        .float-btn:hover { transform: scale(1.12); }
+        .btn-call  { background: #E53935; }
+        .btn-zalo  { background: #0068FF; }
+        .btn-chat  { background: var(--gradient-bronze); border-color: var(--bronze-light); color: #2A1308; }
+        .tooltip {
+            position: absolute; right: 66px;
+            background: rgba(46,22,7,0.94);
+            color: var(--bronze-cream);
+            padding: 7px 12px; border-radius: 5px;
+            font-size: 0.82rem; white-space: nowrap;
+            opacity: 0; visibility: hidden;
+            transition: var(--transition);
+            border: 1px solid rgba(212,160,64,0.35);
+            box-shadow: var(--shadow-sm);
+        }
+        .float-btn:hover .tooltip { opacity: 1; visibility: visible; }
+
+        /* Chat widget */
+        .chat-widget {
+            position: fixed; bottom: 98px; right: 28px; width: 335px;
+            background: var(--bg-sec-2);
+            border-radius: 14px; box-shadow: var(--shadow-lg);
+            overflow: hidden; z-index: 1000;
+            opacity: 0; visibility: hidden;
+            transform: translateY(18px);
+            transition: var(--transition);
+            display: flex; flex-direction: column;
+            border: 1px solid rgba(212,160,64,0.3);
+        }
+        .chat-widget.active { opacity: 1; visibility: visible; transform: translateY(0); }
+        .chat-header {
+            background: var(--gradient-bronze);
+            color: #2A1308;
+            padding: 14px 20px;
+            display: flex; justify-content: space-between; align-items: center;
+            font-weight: bold;
+        }
+        .chat-header h4 { margin: 0; font-size: 1.1rem; color: #2A1308; display: flex; align-items: center; gap: 8px; }
+        .close-chat { cursor: pointer; font-size: 1.2rem; }
+        .chat-body {
+            padding: 18px; height: 340px; overflow-y: auto;
+            background: var(--bg-sec-1);
+            display: flex; flex-direction: column; gap: 14px;
+        }
+        .chat-msg { max-width: 85%; padding: 11px 15px; border-radius: 10px; font-size: 0.93rem; line-height: 1.5; }
+        .msg-bot {
+            background: var(--bg-card); color: var(--text-main);
+            align-self: flex-start; border-bottom-left-radius: 2px;
+            border: 1px solid rgba(212,160,64,0.15);
+        }
+        .msg-user {
+            background: var(--bronze-mid); color: #fff;
+            align-self: flex-end; border-bottom-right-radius: 2px;
+        }
+        .chat-suggestions { display: flex; flex-direction: column; gap: 8px; margin-top: 14px; }
+        .chat-sugg-btn {
+            background: transparent;
+            border: 1px solid rgba(212,160,64,0.5);
+            color: var(--bronze-light);
+            padding: 9px 14px; border-radius: 20px;
+            font-size: 0.88rem; cursor: pointer;
+            text-align: left; transition: var(--transition);
+        }
+        .chat-sugg-btn:hover {
+            background: var(--bronze-gold); color: #2A1308; font-weight: 600;
+            border-color: var(--bronze-gold);
+        }
+
+        /* Modal & Toast */
+        .modal-backdrop {
+            position: fixed; inset: 0;
+            background: rgba(30, 12, 4, 0.92);
+            backdrop-filter: blur(12px);
+            z-index: 1001;
+            display: flex; align-items: center; justify-content: center;
+            opacity: 0; visibility: hidden; transition: var(--transition);
+        }
+        .modal-backdrop.active { opacity: 1; visibility: visible; }
+        .modal-content {
+            background: linear-gradient(165deg, var(--bg-sec-2), var(--bg-sec-1));
+            width: 90%; max-width: 900px;
+            border-radius: 16px; overflow: hidden; position: relative;
+            transform: scale(0.92); transition: var(--transition);
+            max-height: 90vh; display: flex; flex-direction: column;
+            border: 1px solid rgba(212,160,64,0.35);
+            box-shadow: 0 0 60px rgba(0,0,0,0.8), 0 0 0 1px rgba(212,160,64,0.08);
+        }
+        .modal-backdrop.active .modal-content { transform: scale(1); }
+        .modal-close {
+            position: absolute; top: 14px; right: 14px;
+            width: 40px; height: 40px;
+            background: rgba(212,160,64,0.15);
+            color: var(--bronze-light);
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            cursor: pointer; z-index: 10;
+            border: 1px solid rgba(212,160,64,0.35);
+            transition: var(--transition); font-size: 1.15rem;
+        }
+        .modal-close:hover { background: var(--bronze-gold); color: #2A1308; }
+        .modal-body { overflow-y: auto; padding: 40px; position: relative; }
+        .modal-body::before {
+            content: ''; position: absolute; inset: 0;
+            background-image: var(--pattern-drum); background-size: 300px;
+            opacity: 0.04; pointer-events: none;
+        }
+        .toast {
+            position: fixed; top: 96px; right: 20px;
+            background: var(--bg-card);
+            border-left: 4px solid #4CAF50;
+            color: var(--text-main);
+            padding: 14px 24px; border-radius: 7px;
+            box-shadow: var(--shadow-md); z-index: 2000;
+            transform: translateX(120%); transition: transform 0.3s ease;
+            border: 1px solid rgba(212,160,64,0.25);
+            border-left-color: #4CAF50;
+        }
+        .toast.active { transform: translateX(0); }
+
+        /* ===========================
+           RESPONSIVE
+           =========================== */
+        @media (max-width: 1100px) {
+            .hero-container { grid-template-columns: 1fr 1fr; gap: 44px; }
+        }
+        @media (max-width: 992px) {
+            .hero-container, .about-grid, .contact-container, .footer-grid { grid-template-columns: 1fr; }
+            .hero-content { text-align: center; order: 1; }
+            .hero-btns { justify-content: center; }
+            .hero-highlights { grid-template-columns: repeat(3, 1fr); }
+            .hero-image-wrapper { order: 2; margin-top: 40px; animation: none; }
+            .hero-img-badge { bottom: 14px; left: 14px; }
+            .about-stats { right: 0; bottom: -22px; }
+            .service-grid { grid-template-columns: repeat(2, 1fr); }
+            .timeline::before { left: 30px; }
+            .timeline-item { width: 100%; padding-left: 80px; padding-right: 0; text-align: left !important; }
+            .timeline-item:nth-child(even), .timeline-item:nth-child(odd) { left: 0; }
+            .timeline-item:nth-child(odd) .timeline-dot, .timeline-item:nth-child(even) .timeline-dot { left: 10px; right: auto; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+            /* Mobile: giảm pattern opacity */
+            .hero::before { opacity: 0.05; }
+            .hero-pattern-drum { opacity: 0.07; }
+            .hero-pattern-lotus { opacity: 0.03; }
+        }
+        @media (max-width: 768px) {
+            .hamburger { display: block; }
+            .nav-menu {
+                position: absolute; top: 82px; left: -100%; width: 100%;
+                background: rgba(46,22,7,0.98);
+                flex-direction: column; padding: 24px; box-shadow: var(--shadow-md);
+                transition: var(--transition); gap: 18px;
+                border-bottom: 2px solid var(--bronze-gold);
+                backdrop-filter: blur(16px);
+            }
+            .nav-menu.active { left: 0; }
+            .dropdown-menu {
+                position: static; opacity: 1; visibility: visible;
+                box-shadow: none; background: transparent;
+                transform: none; display: none; margin-top: 12px;
+                border: none; padding-left: 16px;
+            }
+            .dropdown.active .dropdown-menu { display: block; }
+            .hero-content h1 { font-size: 2.6rem; }
+            .hero-highlights { grid-template-columns: 1fr; gap: 10px; }
+            .service-grid, .footer-grid { grid-template-columns: 1fr; }
+            .contact-actions { flex-direction: column; gap: 14px; }
+            .contact-actions .btn { width: 100%; }
+            .modal-body { padding: 24px; }
+            /* Giảm pattern trên mobile */
+            .hero::before { opacity: 0.04; }
+            .hero::after { opacity: 0.05; }
+            .hero-pattern-drum { opacity: 0.05; width: 460px; height: 460px; }
+            .hero-pattern-drum-sm { display: none; }
+            .hero-glow { width: 100%; }
+            .section-padding { padding: 70px 0; }
+            .section-title { font-size: 2.2rem; letter-spacing: 2px; }
+        }
+        @media (max-width: 480px) {
+            .container { padding: 0 16px; }
+            .hero-content h1 { font-size: 2.1rem; }
+            .btn { padding: 13px 22px; font-size: 0.88rem; }
+            .hero-image-wrapper img { height: 320px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Lớp pattern siêu mờ chung cho toàn trang để liên kết các section -->
+    <div class="global-pattern"></div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-gopuram"></i> QUANG TÍN TÂM
+            </a>
+            <div class="hamburger" id="hamburger"><i class="fa-solid fa-bars"></i></div>
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home" class="nav-link active">Trang chủ</a></li>
+                    <li><a href="#about" class="nav-link">Giới thiệu</a></li>
+                    <li><a href="#products" class="nav-link">Sản phẩm</a></li>
+                    <li class="dropdown">
+                        <a href="#services" class="nav-link">Dịch vụ <i class="fa-solid fa-chevron-down" style="font-size: 0.8em; margin-left: 5px;"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item" onclick="scrollToService('Tượng Trần Hưng Đạo')">Tượng Trần Hưng Đạo</a></li>
+                            <li><a href="#" class="dropdown-item" onclick="scrollToService('Tượng Quang Trung')">Tượng Quang Trung</a></li>
+                            <li><a href="#" class="dropdown-item" onclick="scrollToService('Đai Đồng')">Gia công Đai Đồng</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#projects" class="nav-link">Dự án</a></li>
+                    <li><a href="#news" class="nav-link">Tin tức</a></li>
+                    <li><a href="#contact" class="nav-link">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-top-border"></div>
+        <div class="hero-bottom-border"></div>
+        <div class="hero-pattern-drum"></div>
+        <div class="hero-pattern-drum-sm"></div>
+        <div class="hero-glow"></div>
+        <div class="hero-pattern-lotus"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1>ĐỒ ĐỒNG QUANG TÍN TÂM</h1>
+                <h2>Tinh hoa đồ đồng – Giá trị truyền thống bền vững</h2>
+                <p>Chuyên chế tác, gia công và thi công các sản phẩm đồ đồng mỹ nghệ, tượng đồng, đai đồng và công trình mang đậm giá trị văn hoá – tâm linh.</p>
+
+                <!-- 3 Chỉ số nổi bật -->
+                <div class="hero-highlights">
+                    <div class="hero-highlight-item">
+                        <span class="hl-number">10+</span>
+                        <span class="hl-label">Năm kinh nghiệm</span>
+                    </div>
+                    <div class="hero-highlight-item">
+                        <span class="hl-number">100+</span>
+                        <span class="hl-label">Công trình thực tế</span>
+                    </div>
+                    <div class="hero-highlight-item">
+                        <span class="hl-number"><i class="fa-solid fa-hammer" style="font-size:1.1rem;color:var(--bronze-gold)"></i></span>
+                        <span class="hl-label">Thi công theo yêu cầu</span>
+                    </div>
+                </div>
+
+                <!-- Đường kẻ trang trí -->
+                <div class="hero-divider">
+                    <span>&#10070;</span>
+                </div>
+
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-gavel"></i> Xem công trình</a>
+                    <a href="#contact" class="btn btn-outline"><i class="fa-solid fa-headset"></i> Nhận tư vấn ngay</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-wrapper">
+                    <span class="hero-img-corner tl"></span>
+                    <span class="hero-img-corner tr"></span>
+                    <span class="hero-img-corner bl"></span>
+                    <span class="hero-img-corner br"></span>
+                    <div class="hero-img-inner">
+                        <img src="image/716590729_122112140277213800_3079837166624119908_n.jpg" alt="Đồ đồng mỹ nghệ cao cấp" class="img-bronze-filter">
+                    </div>
+                    <div class="hero-img-badge">
+                        <span>Chế tác thủ công</span>
+                        <strong>Đồng nguyên chất 100%</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="section-border-top"></div>
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-img-wrapper">
+                    <img src="image/716590798_2767578346953695_3887717422714454721_n.jpg" alt="Xưởng chế tác đồ đồng" class="img-bronze-filter">
+                    <div class="about-stats">
+                        <div class="stat-item"><h4>20+</h4><p>Năm giữ lửa nghề</p></div>
+                        <div class="stat-item"><h4>1000+</h4><p>Sản phẩm tinh xảo</p></div>
+                        <div class="stat-item"><h4>300+</h4><p>Dự án tâm linh</p></div>
+                        <div class="stat-item"><h4>100%</h4><p>Đồng thanh khiết</p></div>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h2 class="section-title" style="text-align: left; margin-bottom: 25px;">Gìn giữ tinh hoa thủ công mỹ nghệ Việt</h2>
+                    <p><strong>ĐỒ ĐỒNG QUANG TÍN TÂM</strong> ra đời với sứ mệnh bảo tồn và phát triển nghề đúc đồng truyền thống. Chúng tôi quy tụ những nghệ nhân lành nghề nhất, thổi hồn vào từng khối kim loại thô cứng để tạo nên những tác phẩm nghệ thuật, công trình tâm linh mang giá trị trường tồn.</p>
+                    <p>Sự tinh xảo trong từng đường nét chạm khắc, độ bền bỉ của chất liệu đồng thanh khiết và lòng thành kính trong quá trình chế tác là lời cam kết uy tín nhất của Quang Tín Tâm gửi đến quý khách hàng.</p>
+                    <ul class="about-features">
+                        <li><i class="fa-solid fa-dharmachakra"></i> Chế tác thủ công 100%, bảo lưu kỹ thuật đúc đồng truyền thống.</li>
+                        <li><i class="fa-solid fa-dharmachakra"></i> Nhận đúc tượng, thiết kế hoa văn theo yêu cầu riêng biệt.</li>
+                        <li><i class="fa-solid fa-dharmachakra"></i> Cam kết chất lượng, bảo hành độ bền màu sắc vượt thời gian.</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary" style="margin-top: 25px;">Tìm hiểu thêm <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products section-padding">
+        <div class="section-border-top"></div>
+        <div class="container">
+            <h2 class="section-title">Sản phẩm tiêu biểu</h2>
+            <p class="section-subtitle">Tuyệt tác đồ đồng thủ công, đậm đà bản sắc văn hoá</p>
+            <div class="product-grid" id="product-list">
+                <!-- JS Inject -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section-padding">
+        <div class="section-border-top"></div>
+        <div class="container">
+            <h2 class="section-title">Dịch vụ chuyên biệt</h2>
+            <p class="section-subtitle">Giải pháp thi công đồ đồng toàn diện cho mọi công trình kiến trúc tâm linh</p>
+            <div class="service-grid">
+                <div class="service-card">
+                    <div class="service-img"><img src="image/488235454_1294739315488388_2242974043186071949_n.jpg" alt="Tượng Trần Hưng Đạo" class="img-bronze-filter"></div>
+                    <div class="service-icon"><i class="fa-solid fa-chess-king"></i></div>
+                    <div class="service-content">
+                        <h3>Tượng Trần Hưng Đạo</h3>
+                        <p>Chuyên chế tác tượng Hưng Đạo Đại Vương bằng đồng cao cấp. Phù hợp an vị tại các khu tưởng niệm, không gian thờ tự.</p>
+                        <ul class="service-pros">
+                            <li><i class="fa-solid fa-certificate"></i> Thần thái oai nghiêm, lẫm liệt</li>
+                            <li><i class="fa-solid fa-certificate"></i> Chi tiết giáp phục sắc nét</li>
+                        </ul>
+                        <button class="btn btn-outline" onclick="consultService('Tượng Trần Hưng Đạo')">Nhận báo giá</button>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img"><img src="image/718938067_2084427738773153_2499482829807214345_n.jpg" alt="Tượng Quang Trung" class="img-bronze-filter"></div>
+                    <div class="service-icon"><i class="fa-solid fa-chess-knight"></i></div>
+                    <div class="service-content">
+                        <h3>Tượng Quang Trung</h3>
+                        <p>Nhận đúc tượng Hoàng đế Quang Trung theo chuẩn mẫu quốc gia hoặc yêu cầu riêng. Tôn vinh hào khí Tây Sơn.</p>
+                        <ul class="service-pros">
+                            <li><i class="fa-solid fa-certificate"></i> Tạo hình sống động, oai phong</li>
+                            <li><i class="fa-solid fa-certificate"></i> Xử lý bề mặt chống oxy hóa ngoài trời</li>
+                        </ul>
+                        <button class="btn btn-outline" onclick="consultService('Tượng Quang Trung')">Nhận báo giá</button>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img"><img src="image/721211193_2086147555267838_6189158706955961117_n.jpg" alt="Đai Đồng" class="img-bronze-filter"></div>
+                    <div class="service-icon"><i class="fa-solid fa-ring"></i></div>
+                    <div class="service-content">
+                        <h3>Đai Đồng Trang Trí</h3>
+                        <p>Gia công đai đồng trang trí cột, hoành phi câu đối, và các chi tiết hoa văn đồng mỹ thuật cho nhà gỗ, đình chùa.</p>
+                        <ul class="service-pros">
+                            <li><i class="fa-solid fa-certificate"></i> Gò chạm thủ công kết hợp CNC</li>
+                            <li><i class="fa-solid fa-certificate"></i> Màu đồng xước, giả cổ sang trọng</li>
+                        </ul>
+                        <button class="btn btn-outline" onclick="consultService('Đai Đồng')">Nhận báo giá</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section-padding">
+        <div class="section-border-top"></div>
+        <div class="projects-pattern-drum"></div> <!-- Hoa văn góc trái -->
+        <div class="container">
+            <h2 class="section-title">Dự án tiêu biểu</h2>
+            <p class="section-subtitle">Những công trình tâm linh, văn hóa in đậm dấu ấn Quang Tín Tâm</p>
+            <div class="project-grid" id="project-list">
+                <!-- JS Inject -->
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="news section-padding">
+        <div class="section-border-top"></div>
+        <div class="container">
+            <h2 class="section-title">Góc chia sẻ</h2>
+            <p class="section-subtitle">Kiến thức, phong thủy và kinh nghiệm về đồ đồng mỹ nghệ</p>
+            <div class="news-grid" id="news-list">
+                <!-- JS Inject -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding">
+        <div class="section-border-top"></div>
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Liên hệ Quang Tín Tâm</h3>
+                    <p>Trân trọng kính mời quý khách đến tham quan xưởng và nhận tư vấn trực tiếp để chọn được sản phẩm ưng ý nhất.</p>
+                    <ul class="contact-list">
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div><strong>Xưởng đúc đồng truyền thống:</strong>Làng nghề đúc đồng Ý Yên, Nam Định</div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <div><strong>Hotline/Zalo hỗ trợ 24/7:</strong>0987.654.321</div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <div><strong>Email liên hệ:</strong>lienhe@dodongquangtintam.vn</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact-form-wrapper">
+                    <h3>Gửi yêu cầu tư vấn</h3>
+                    <form id="contactForm">
+                        <div class="form-group"><label for="name">Họ và tên *</label><input type="text" id="name" class="form-control" required placeholder="Ví dụ: Nguyễn Văn A"></div>
+                        <div class="form-group"><label for="phone">Số điện thoại *</label><input type="tel" id="phone" class="form-control" required placeholder="Nhập số điện thoại để Zalo/Gọi"></div>
+                        <div class="form-group"><label for="address">Khu vực / Địa chỉ</label><input type="text" id="address" class="form-control" placeholder="Tỉnh/Thành phố hoặc địa chỉ cụ thể"></div>
+                        <div class="form-group">
+                            <label for="service">Bạn đang quan tâm dịch vụ/sản phẩm nào? *</label>
+                            <select id="service" class="form-control" required>
+                                <option value="" disabled selected>-- Chọn nhu cầu của bạn --</option>
+                                <option value="Tượng Trần Hưng Đạo">Tượng Trần Hưng Đạo</option>
+                                <option value="Tượng Quang Trung">Tượng Quang Trung</option>
+                                <option value="Đai Đồng">Đai Đồng / Hoa văn trang trí</option>
+                                <option value="Đồ đồng mỹ nghệ">Đồ thờ cúng (Lư, Hoành phi...)</option>
+                                <option value="Dự án công trình">Thi công dự án đền chùa, nhà thờ họ</option>
+                                <option value="Khác">Khác / Cần tư vấn thêm</option>
+                            </select>
+                        </div>
+                        <div class="form-group"><label for="message">Ghi chú thêm</label><textarea id="message" class="form-control" placeholder="Kích thước dự kiến, yêu cầu đặc biệt về màu sắc..."></textarea></div>
+                        <div class="contact-actions">
+                            <button type="submit" class="btn btn-primary" style="padding: 14px 45px; font-size: 1.1rem;"><i class="fa-solid fa-paper-plane" style="margin-right: 10px;"></i> Gửi thông tin</button>
+                            <button type="button" class="btn btn-outline" onclick="viewSavedRequests()" style="border: none;"><i class="fa-solid fa-clock-rotate-left"></i> Xem lịch sử gửi</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#" class="footer-logo"><i class="fa-solid fa-gopuram"></i> QUANG TÍN TÂM</a>
+                    <p style="margin-bottom: 25px; font-size: 0.95rem; line-height: 1.8;">Thương hiệu đúc đồng mỹ nghệ cao cấp, gìn giữ tinh hoa văn hoá Việt qua từng tác phẩm tượng danh nhân, tượng thờ và công trình đồ đồng kiến trúc.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Khám phá</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">Về Quang Tín Tâm</a></li>
+                        <li><a href="#projects">Dự án thi công</a></li>
+                        <li><a href="#process">Quy trình chế tác</a></li>
+                        <li><a href="#news">Kiến thức đồ đồng</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Dịch vụ chính</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" onclick="consultService('Tượng Trần Hưng Đạo'); return false;">Tượng Trần Hưng Đạo</a></li>
+                        <li><a href="#" onclick="consultService('Tượng Quang Trung'); return false;">Tượng Quang Trung</a></li>
+                        <li><a href="#" onclick="consultService('Đai Đồng'); return false;">Gia công Đai Đồng</a></li>
+                        <li><a href="#" onclick="consultService('Đồ đồng mỹ nghệ'); return false;">Đồ đồng trang trí</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Chính sách & Hỗ trợ</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Bảo hành trọn đời chất liệu</a></li>
+                        <li><a href="#">Cam kết đúng tiến độ</a></li>
+                        <li><a href="#">Vận chuyển & Lắp đặt toàn quốc</a></li>
+                        <li><a href="#">Quy trình thanh toán</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 ĐỒ ĐỒNG QUANG TÍN TÂM. Bảo lưu mọi quyền. <br>
+                <span style="font-size: 0.8rem; opacity: 0.5; margin-top: 5px; display: inline-block;">Phát triển vì mục tiêu gìn giữ nghề truyền thống Việt Nam.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <div class="floating-buttons">
+        <a href="tel:0987654321" class="float-btn btn-call"><i class="fa-solid fa-phone-volume"></i><span class="tooltip">Gọi điện tư vấn</span></a>
+        <a href="#" class="float-btn btn-zalo"><i class="fa-solid fa-comment-sms"></i><span class="tooltip">Chat Zalo ngay</span></a>
+        <div class="float-btn btn-chat" id="openChatBtn"><i class="fa-solid fa-comments"></i><span class="tooltip">Trợ lý Quang Tín Tâm</span></div>
+    </div>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget" id="chatWidget">
+        <div class="chat-header">
+            <h4><i class="fa-solid fa-seedling"></i> Trợ lý Quang Tín Tâm</h4>
+            <i class="fa-solid fa-xmark close-chat" id="closeChatBtn"></i>
+        </div>
+        <div class="chat-body" id="chatBody">
+            <div class="chat-msg msg-bot">Dạ Quang Tín Tâm kính chào quý khách. Quý khách đang quan tâm đến đúc tượng đồng, đai đồng hay hạng mục đồ thờ ạ?
+                <div class="chat-suggestions" id="chatSuggestions">
+                    <button class="chat-sugg-btn" onclick="sendChatSugg('Tôi muốn tư vấn tượng Trần Hưng Đạo')">Tư vấn tượng Trần Hưng Đạo</button>
+                    <button class="chat-sugg-btn" onclick="sendChatSugg('Tôi muốn tư vấn tượng Quang Trung')">Tư vấn tượng Quang Trung</button>
+                    <button class="chat-sugg-btn" onclick="sendChatSugg('Tôi cần báo giá đai đồng công trình')">Báo giá đai đồng</button>
+                    <button class="chat-sugg-btn" onclick="sendChatSugg('Tôi muốn đặt sản phẩm theo yêu cầu')">Đặt đúc theo yêu cầu</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <div class="modal-backdrop" id="mainModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-body" id="modalBody"></div>
+        </div>
+    </div>
+    <div class="toast" id="toast"><i class="fa-solid fa-circle-check" style="color: #4CAF50; margin-right: 12px; font-size: 1.2rem;"></i><span id="toastMsg">Quang Tín Tâm đã nhận được yêu cầu. Chúng tôi sẽ liên hệ sớm nhất!</span></div>
+
+    <script>
+        // Dữ liệu ảnh minh hoạ
+        const products = [
+            { id: 1, name: "Tượng Trần Hưng Đạo", material: "Đồng đỏ nguyên chất", size: "Cao 90cm, Nặng 45kg", app: "Phòng khách, không gian thờ", img: "image/488235454_1294739315488388_2242974043186071949_n.jpg", desc: "Tác phẩm khắc họa thần thái oai nghiêm, lẫm liệt của Hưng Đạo Đại Vương." },
+            { id: 2, name: "Tượng Quang Trung", material: "Đồng vàng giả cổ", size: "Cao 60cm, Dài 55cm", app: "Quà tặng, trưng bày", img: "image/718938067_2084427738773153_2499482829807214345_n.jpg", desc: "Tượng thể hiện hào khí Tây Sơn oai hùng. Bề mặt được xử lý màu giả cổ sang trọng." },
+            { id: 3, name: "Đai Đồng Trang Trí", material: "Đồng tấm dày 1.5mm", size: "Theo kích thước cột", app: "Nhà gỗ cổ truyền, từ đường", img: "image/721211193_2086147555267838_6189158706955961117_n.jpg", desc: "Hoa văn đục thủ công tinh tế kết hợp công nghệ CNC chính xác." },
+            { id: 4, name: "Bộ Hoành Phi Câu Đối", material: "Đồng vàng nguyên tấm", size: "Hoành phi 1m97", app: "Không gian thờ gia tiên", img: "image/719586818_2084414305441163_9013940956109980049_n.jpg", desc: "Chữ thư pháp chạm nổi tinh xảo, nền sơn đen hoặc đỏ." },
+            { id: 5, name: "Tượng Phật Bằng Đồng", material: "Đồng đỏ đúc nguyên khối", size: "Cao 1m2", app: "Đình, chùa", img: "image/494824674_3592517647552206_2152233157550877694_n.jpg", desc: "Đúc nguyên khối, thần thái an lạc, trang nghiêm." },
+            { id: 6, name: "Lư Hương Đồng", material: "Đồng đỏ đúc khối lớn", size: "Cao 1m2", app: "Sân đình, đài tưởng niệm", img: "image/495644645_3602704829866821_2470899075978850062_n.jpg", desc: "Đúc khối dày dặn chịu nhiệt cao. Hoa văn rồng phượng chầu nguyệt." },
+            { id: 7, name: "Trống Đồng Trang Trí", material: "Đồng đỏ nguyên khối", size: "Đường kính 60cm", app: "Phòng khánh tiết", img: "image/487990818_1295927938702859_4555294467755806371_n.jpg", desc: "Mô phỏng chính xác hoa văn trống đồng Đông Sơn cổ đại." },
+            { id: 8, name: "Linh Vật Phong Thủy", material: "Đồng vỏ đạn", size: "Đa dạng kích thước", app: "Bàn làm việc", img: "image/488004002_1294739195488400_1876051039293642905_n.jpg", desc: "Chế tác từ chất liệu đồng đặc biệt cho màu vàng bóng sang trọng." }
+        ];
+
+        const projects = [
+            { id: 1, name: "Đài Tưởng Niệm Tỉnh", loc: "Nam Định", scope: "Đúc tượng đài, phù điêu lớn", time: "3 Tháng", img: "image/716590729_122112140277213800_3079837166624119908_n.jpg", desc: "Công trình trọng điểm cấp tỉnh. Thi công trọn gói từ khâu tạo mẫu đất sét đến đúc khối đồng khổng lồ tại công trình." },
+            { id: 2, name: "Đai Đồng Nhà Thờ Họ", loc: "Nghệ An", scope: "Bọc 24 cột lim", time: "45 Ngày", img: "image/716590798_2767578346953695_3887717422714454721_n.jpg", desc: "Sử dụng đồng tấm 1.2mm dập hoa văn cổ điển. Xử lý màu giả cổ hoàn hảo tiệp với màu gỗ lim." },
+            { id: 3, name: "Tượng Danh Nhân Bảo Tàng", loc: "Hà Nội", scope: "5 tượng bán thân", time: "2 Tháng", img: "image/488777637_1295928188702834_5253583594367612882_n.jpg", desc: "Yêu cầu khắt khe về tính chân thực lịch sử và thần thái." },
+            { id: 4, name: "Không Gian Thờ Đền Mẫu", loc: "Hưng Yên", scope: "Bộ ngũ sự", time: "20 Ngày", img: "image/488946422_1295886382040348_843480369733091465_n.jpg", desc: "Trang bị đồng bộ đồ thờ cúng bằng đồng đỏ cạo màu." },
+            { id: 5, name: "Sản Phẩm Mỹ Nghệ Biệt Thự", loc: "TP.HCM", scope: "Lư hương trang trí", time: "1 Tháng", img: "image/719068978_1511796400488184_9088775218194076147_n.jpg", desc: "Cung cấp trọn bộ sản phẩm trang trí nội thất tân cổ điển." }
+        ];
+
+        const news = [
+            { id: 1, title: "Bí quyết chọn tượng đồng phong thủy", date: "15/05/2026", desc: "Lựa chọn kích thước, chất liệu và tư thế tượng như thế nào để đảm bảo yếu tố phong thủy...", img: "image/488235454_1294739315488388_2242974043186071949_n.jpg" },
+            { id: 2, title: "Ý nghĩa tâm linh của tượng Trần Hưng Đạo", date: "02/05/2026", desc: "Không chỉ là tác phẩm nghệ thuật, tượng Hưng Đạo Đại Vương còn mang ý nghĩa trấn trạch...", img: "image/718938067_2084427738773153_2499482829807214345_n.jpg" },
+            { id: 3, title: "Bảo quản đồ đồng luôn giữ được sắc kim", date: "20/04/2026", desc: "Chia sẻ các phương pháp tự nhiên và chuyên dụng để vệ sinh đồ đồng tại nhà...", img: "image/716590798_2767578346953695_3887717422714454721_n.jpg" }
+        ];
+
+        // Khởi tạo DOM
+        const header = document.getElementById('header');
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        const modal = document.getElementById('mainModal');
+        const modalBody = document.getElementById('modalBody');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) header.classList.add('scrolled');
+            else header.classList.remove('scrolled');
+            let current = '';
+            document.querySelectorAll('section').forEach(sec => { if (scrollY >= sec.offsetTop - 150) current = sec.getAttribute('id'); });
+            document.querySelectorAll('.nav-link').forEach(li => {
+                li.classList.remove('active');
+                if (li.getAttribute('href') === `#${current}`) li.classList.add('active');
+            });
+        });
+
+        hamburger.addEventListener('click', () => navMenu.classList.toggle('active'));
+        document.querySelectorAll('.dropdown > a').forEach(el => { el.addEventListener('click', (e) => { if(window.innerWidth <= 768) { e.preventDefault(); e.target.parentElement.classList.toggle('active'); } }); });
+        document.querySelectorAll('.nav-link:not(.dropdown > a)').forEach(link => { link.addEventListener('click', () => navMenu.classList.remove('active')); });
+
+        // Render HTML
+        document.getElementById('product-list').innerHTML = products.map(p => `
+            <div class="product-card" onclick="openProductModal(${p.id})">
+                <div class="product-img-wrap"><img src="${p.img}" alt="${p.name}" class="img-bronze-filter"></div>
+                <div class="product-info">
+                    <h3>${p.name}</h3>
+                    <div class="product-meta"><p><i class="fa-solid fa-cube"></i> ${p.material}</p><p><i class="fa-solid fa-ruler-combined"></i> ${p.size}</p></div>
+                    <span class="read-more">Chi tiết sản phẩm <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </div>
+        `).join('');
+
+        document.getElementById('project-list').innerHTML = projects.map(p => `
+            <div class="project-card" onclick="openProjectModal(${p.id})">
+                <img src="${p.img}" alt="${p.name}" class="img-bronze-filter">
+                <div class="project-overlay">
+                    <h3>${p.name}</h3><p><i class="fa-solid fa-location-dot"></i> ${p.loc} &nbsp;|&nbsp; <i class="fa-solid fa-clock"></i> ${p.time}</p>
+                </div>
+            </div>
+        `).join('');
+
+        document.getElementById('news-list').innerHTML = news.map(n => `
+            <div class="news-card">
+                <div class="news-img-wrap"><img src="${n.img}" alt="${n.title}" class="img-bronze-filter"></div>
+                <div class="news-content">
+                    <span class="news-date"><i class="fa-regular fa-calendar"></i> ${n.date}</span>
+                    <h3>${n.title}</h3><p>${n.desc}</p>
+                    <a href="javascript:void(0)" onclick="openNewsModal(${n.id})" class="read-more" style="color:var(--bronze-gold); font-size:0.9rem; font-weight:bold;">Đọc bài viết <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        `).join('');
+
+        function openModal(content) { modalBody.innerHTML = content; modal.classList.add('active'); }
+        document.getElementById('closeModal').addEventListener('click', () => modal.classList.remove('active'));
+        modal.addEventListener('click', (e) => { if (e.target === modal) modal.classList.remove('active'); });
+
+        function openProductModal(id) {
+            const p = products.find(x => x.id === id);
+            openModal(`
+                <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 40px; align-items: center;">
+                    <div><img src="${p.img}" alt="${p.name}" style="width: 100%; border-radius: 8px; border: 3px solid var(--bronze-mid);" class="img-bronze-filter"></div>
+                    <div>
+                        <h2 style="font-size: 2.2rem; color: var(--bronze-light); margin-bottom: 20px;">${p.name}</h2>
+                        <div style="background: var(--bg-sec-1); padding: 20px; border-radius: 8px; margin-bottom: 25px; border-left: 4px solid var(--bronze-gold);">
+                            <p style="margin-bottom: 12px; color: var(--text-main);"><strong><i class="fa-solid fa-cube" style="color:var(--bronze-gold)"></i> Chất liệu:</strong> ${p.material}</p>
+                            <p style="margin-bottom: 12px; color: var(--text-main);"><strong><i class="fa-solid fa-ruler" style="color:var(--bronze-gold)"></i> Quy cách:</strong> ${p.size}</p>
+                            <p style="color: var(--text-main);"><strong><i class="fa-solid fa-vihara" style="color:var(--bronze-gold)"></i> Ứng dụng:</strong> ${p.app}</p>
+                        </div>
+                        <h4 style="color: var(--bronze-cream); margin-bottom: 10px;">Chi tiết tác phẩm:</h4>
+                        <p style="line-height: 1.8; margin-bottom: 30px; color: var(--text-muted);">${p.desc}</p>
+                        <button class="btn btn-primary" onclick="consultProduct('${p.name}')"><i class="fa-solid fa-headset"></i> Đăng ký tư vấn</button>
+                    </div>
+                </div>
+            `);
+        }
+
+        function openProjectModal(id) {
+            const p = projects.find(x => x.id === id);
+            openModal(`
+                <div style="text-align: center; margin-bottom: 30px;">
+                    <img src="${p.img}" alt="${p.name}" style="width: 100%; height: 350px; object-fit: cover; border-radius: 8px; border: 2px solid var(--bronze-mid); margin-bottom: 20px;" class="img-bronze-filter">
+                    <h2 style="font-size: 2.2rem; color: var(--bronze-light);">${p.name}</h2>
+                </div>
+                <div style="background: var(--bg-sec-1); padding: 25px; border-radius: 8px; margin-bottom: 25px; border: 1px solid rgba(200,149,59,0.3);">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; color: var(--text-main);">
+                        <p><strong><i class="fa-solid fa-location-dot" style="color:var(--bronze-gold)"></i> Địa điểm:</strong> ${p.loc}</p>
+                        <p><strong><i class="fa-solid fa-clock" style="color:var(--bronze-gold)"></i> Thời gian:</strong> ${p.time}</p>
+                        <p style="grid-column: 1 / -1; padding-top: 15px; border-top: 1px dashed rgba(200,149,59,0.3);"><strong><i class="fa-solid fa-list-check" style="color:var(--bronze-gold)"></i> Quy mô:</strong> ${p.scope}</p>
+                    </div>
+                </div>
+                <p style="line-height: 1.8; margin-bottom: 30px; color: var(--text-muted);">${p.desc}</p>
+                <div style="text-align: center;"><button class="btn btn-primary" onclick="consultService('Dự án công trình')"><i class="fa-solid fa-handshake"></i> Liên hệ triển khai dự án</button></div>
+            `);
+        }
+
+        function openNewsModal(id) {
+            const n = news.find(x => x.id === id);
+            openModal(`
+                <img src="${n.img}" alt="${n.title}" style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px; margin-bottom: 25px; border: 2px solid var(--bronze-mid);" class="img-bronze-filter">
+                <span style="color: var(--bronze-gold); font-weight: 600; margin-bottom: 15px; display: block; text-transform: uppercase;"><i class="fa-regular fa-calendar"></i> ${n.date}</span>
+                <h2 style="font-size: 2rem; color: var(--bronze-light); margin-bottom: 20px;">${n.title}</h2>
+                <div style="line-height: 1.8; font-size: 1.05rem; color: var(--text-main);">
+                    <p style="font-style: italic; color: var(--bronze-cream); margin-bottom: 20px; padding-left: 15px; border-left: 3px solid var(--bronze-gold);">${n.desc}</p>
+                    <p style="color: var(--text-muted);">Bài viết đang được cập nhật chi tiết...</p>
+                </div>
+            `);
+        }
+
+        function consultProduct(name) { modal.classList.remove('active'); document.getElementById('service').value = 'Khác'; document.getElementById('message').value = `Tôi muốn nhận tư vấn về tác phẩm: ${name}`; document.getElementById('contact').scrollIntoView(); navMenu.classList.remove('active'); }
+        function consultService(serviceName) { const sel = document.getElementById('service'); let found = false; for(let i=0; i<sel.options.length; i++) { if(sel.options[i].value === serviceName) { sel.selectedIndex = i; found = true; break; } } if(!found) sel.value = 'Khác'; document.getElementById('contact').scrollIntoView(); navMenu.classList.remove('active'); }
+        function scrollToService() { document.getElementById('services').scrollIntoView(); navMenu.classList.remove('active'); }
+
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const req = { date: new Date().toLocaleString('vi-VN'), name: document.getElementById('name').value, phone: document.getElementById('phone').value, service: document.getElementById('service').value, message: document.getElementById('message').value };
+            let requests = JSON.parse(localStorage.getItem('quangtintam_reqs') || '[]'); requests.push(req); localStorage.setItem('quangtintam_reqs', JSON.stringify(requests));
+            contactForm.reset(); const toast = document.getElementById('toast'); toast.classList.add('active'); setTimeout(() => toast.classList.remove('active'), 4000);
+        });
+
+        function viewSavedRequests() {
+            let reqs = JSON.parse(localStorage.getItem('quangtintam_reqs') || '[]');
+            if(reqs.length === 0) { alert("Chưa có lịch sử gửi yêu cầu nào."); return; }
+            let html = `<h2 style="margin-bottom: 25px; text-align: center; color: var(--bronze-light);"><i class="fa-solid fa-clock-rotate-left"></i> Lịch sử yêu cầu</h2><div style="display: flex; flex-direction: column; gap: 15px;">`;
+            reqs.reverse().forEach(r => { html += `<div style="background: var(--bg-sec-1); padding: 18px; border-radius: 8px; border-left: 4px solid var(--bronze-gold); box-shadow: 0 4px 10px rgba(0,0,0,0.3);"><p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 8px;"><i class="fa-regular fa-clock"></i> ${r.date}</p><p style="color: var(--text-main); margin-bottom: 5px;"><strong>Dịch vụ quan tâm:</strong> <span style="color: var(--bronze-cream);">${r.service}</span></p><p style="color: var(--text-main);"><strong>Thông tin:</strong> ${r.name} - ${r.phone}</p>${r.message ? `<p style="margin-top: 10px; padding-top: 10px; border-top: 1px dashed rgba(200,149,59,0.3); font-style: italic; color: var(--text-muted);">" ${r.message} "</p>` : ''}</div>`; });
+            openModal(html + `</div>`);
+        }
+
+        const chatWidget = document.getElementById('chatWidget');
+        document.getElementById('openChatBtn').addEventListener('click', () => chatWidget.classList.toggle('active'));
+        document.getElementById('closeChatBtn').addEventListener('click', () => chatWidget.classList.remove('active'));
+
+        function sendChatSugg(text) {
+            document.getElementById('chatSuggestions').style.display = 'none';
+            const body = document.getElementById('chatBody');
+            body.innerHTML += `<div class="chat-msg msg-user">${text}</div>`; body.scrollTop = body.scrollHeight;
+            setTimeout(() => {
+                let reply = "Dạ, Quang Tín Tâm xin ghi nhận thông tin. Để tiện trao đổi chi tiết, quý khách vui lòng để lại Số Điện Thoại Zalo để nghệ nhân liên hệ trực tiếp ạ.";
+                if(text.includes('Quang Trung') || text.includes('Trần Hưng Đạo')) reply = `Dạ mẫu ${text.replace('Tôi muốn tư vấn ', '')} bên em đang có sẵn khuôn. Quý khách để lại SĐT Zalo em gửi hình ảnh nhé.`;
+                body.innerHTML += `<div class="chat-msg msg-bot">${reply}</div>`; body.scrollTop = body.scrollHeight;
+            }, 1000);
+        }
+    </script>
+</body>
+</html>
